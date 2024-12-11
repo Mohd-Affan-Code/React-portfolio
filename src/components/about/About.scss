@@ -1,0 +1,145 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 80px 170px;
+}
+
+.about-title h1{
+    font-size: 60px;
+}
+
+.about-section {
+  display: flex;
+  gap: 50px;
+}
+
+.about-left img {
+  height: 400px;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-para p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-skill {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  transition: .3s;
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}
+
+.about-skill p {
+  min-width: 110px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-skill hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 8px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+}
+
+.about-achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+  }
+}
+
+.achievements h1 {
+  font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media(max-width:768px) {
+  .about {
+    gap: 70px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .about-title h1 {
+    font-size: 50px;
+    padding: 0;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+  .about-left {
+    display: none;
+  }
+  
+  .about-para {
+    line-height: 32px;
+  }
+  .about-skill {
+    gap: 20px ;
+    align-items: center;
+  }
+  .about-skill p {
+    font-size: 20px;
+  }
+  .about-skill hr {
+    height: 6px;
+  }
+  .about-achievements {
+    justify-content: space-between ;
+  }
+  .achievements {
+      gap: 10px;
+  }
+  .achievements h1 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .achievements p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
